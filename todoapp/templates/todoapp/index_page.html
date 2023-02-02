@@ -1,0 +1,10 @@
+{% extends 'todoapp/main.html' %}
+
+{% block content %}
+{% load static %}
+<img src="{% static 'todoapp/home.png' %}">
+<link rel="stylesheet" href="{% static 'todoapp/index.css' %}">
+
+<button type="button"><a href="login/">Get Started</button></a>
+
+{% endblock %}

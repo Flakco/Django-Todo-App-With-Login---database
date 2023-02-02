@@ -1,0 +1,89 @@
+body {
+    background-color: #5E8EFF;
+    display: grid;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.container {
+    width: 428px;
+    height: 926px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+}
+
+span {
+    font-size: 10px;
+    display: inline-block;
+    display: none;
+}
+
+  
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul {
+    display: none;
+}
+
+label {
+    display: block;
+    justify-content: center;
+    padding-bottom: 3px;
+}
+
+input[type="submit"] {
+    display: flex;
+    margin: auto;
+    background-color: #5E8EFF;
+    width: 176px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    margin-top: 28px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+p,a {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle > a {
+    padding-left: 3px;
+}
+
+

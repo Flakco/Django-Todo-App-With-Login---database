@@ -1,0 +1,117 @@
+body {
+    background-color: #5E8EFF;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 428px;
+    height: 926px;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    overflow: auto;
+}
+
+.dibujo {
+    width: 280px;
+    height: 327.24px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 76px;
+    margin-top: 30px;
+}
+
+
+.search {
+    background-color: #4d4d4d;
+    width: 70px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding-bottom: 3px;
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task-box {
+    border-radius: 5px;
+    padding: 7px 11px 7px 11px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    overflow-wrap: break-word;
+    width: 178px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    font-weight: bold;
+    width: 197px;
+}
+
+form, table, a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+table,tr {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.log-out {
+    position: absolute;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+button {
+    background-color: #5E8EFF;
+    width: 280px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tbody {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+

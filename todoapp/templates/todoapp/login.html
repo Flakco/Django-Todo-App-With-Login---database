@@ -1,0 +1,23 @@
+{% extends 'todoapp/main.html' %}
+
+{% block content %}
+
+{% load static %}
+<img src="{% static 'todoapp/login.png' %}">
+<link rel="stylesheet" href="{% static 'todoapp/login.css' %}">
+
+<div class="form-content">
+<form method="POST">
+
+    {% csrf_token %}
+    <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username" placeholder="Username">
+    <input type="password" name="password" autocomplete="current-password" required id="id_password" placeholder="Password">
+    <p class="forgotten">Forgotten Password?</p>
+    <input type="submit" value="Sing In" />
+    
+</form>
+<span class="sing-up">Don't have an account? <a href="{% url 'register' %}">Sing Up</a></span>
+</div>
+
+
+{% endblock %}

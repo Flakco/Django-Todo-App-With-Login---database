@@ -1,0 +1,14 @@
+{% extends 'todoapp/main.html' %}
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'todoapp/delete.css' %}">
+
+<a href="{% url 'tasks' %}">Go Back</a>
+<form method="POST" >
+    {% csrf_token %}
+    <p>Are you sure you want to delete this task? "<span>{{task}}</span>"</p>
+    <input type="submit" value="Delete"/>
+</form>
+
+{% endblock %}

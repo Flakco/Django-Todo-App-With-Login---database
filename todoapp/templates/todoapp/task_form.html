@@ -1,0 +1,15 @@
+{% extends 'todoapp/main.html' %}
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'todoapp/update.css' %}">
+
+<a href="{% url 'tasks' %}">Go Back</a>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
