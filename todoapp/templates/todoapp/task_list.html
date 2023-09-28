@@ -27,17 +27,31 @@
 
 <table>
     {% for task in tasks %}
+        {% if task.complete != True %}
+        
+        <tr>
 
-    <tr>
+            <td><div class="task-box" style="background-color: #C14444; border: 0; color: white">{{ task.title|capfirst }}</div><td/>
+            <td><a href='{% url 'task-update' task.id %}'><img class="icon" src="{% static 'todoapp/editar-texto.png' %}"><a/><td/>
+            <td><a href='{% url 'task-delete' task.id %}'><img class="icon" src="{% static 'todoapp/cerrar.png' %}"><a/><td/>
 
-        <td><div class="task-box">{{ task.title|capfirst }}</div><td/>
-        <td><a href='{% url 'task-update' task.id %}'><img class="icon" src="{% static 'todoapp/editar-texto.png' %}"><a/><td/>
-        <td><a href='{% url 'task-delete' task.id %}'><img class="icon" src="{% static 'todoapp/cerrar.png' %}"><a/><td/>
+        </tr>
 
-    </tr>
+        {% else %}
 
+        <tr>
+
+            <td><div class="task-box" style="background-color: #54C67D; border: 0; color: white">{{ task.title|capfirst }}</div><td/>
+            <td><a href='{% url 'task-update' task.id %}'><img class="icon" src="{% static 'todoapp/editar-texto.png' %}"><a/><td/>
+            <td><a href='{% url 'task-delete' task.id %}'><img class="icon" src="{% static 'todoapp/cerrar.png' %}"><a/><td/>
+
+        </tr>
+
+        {% endif %}
     {% empty %} {% comment %} si las lista esta vacia q haga esto {% endcomment %}
-    <h3>No items in the list</h3>
+    
+    <h3 style="text-align: center">No items in the list</h3>
+    
     {% endfor %}
     
 </table>
